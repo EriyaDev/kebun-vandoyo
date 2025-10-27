@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kebun Vandoyo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- RemixIcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="../src/lightbox.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="scroll-smooth bg-primary-color font-urbanist">
+    <header class="top-0 z-50">
+      <nav class="section-container navbar">
+        <div class="logo">
+          <img src="assets/image/logo.svg" alt="" class="hidden lg:flex" />
+          <img src="assets/image/logo-mobile.svg" alt="" class="lg:hidden" />
+        </div>
+
+        <div class="flex flex-row items-center gap-5">
+          <ul class="nav-link-container">
+            <li><a href="#beranda">beranda</a></li>
+            <li><a href="tentang.html">tentang</a></li>
+            <li><a href="layanan.html">layanan</a></li>
+            <li><a href="#booking">booking</a></li>
+          </ul>
+
+          <div class="flex flex-row items-center gap-1">
+            <div class="h-6 w-6 lg:hidden" onclick="showNav()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                ></path>
+              </svg>
+            </div>
+            <button class="button-primary hidden lg:block">Hubungi Kami</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="nav-mobile nav-hidden" id="nav-mobile">
+        <ul>
+          <li><a onclick="closeNav()" href="#beranda">beranda</a></li>
+          <li><a onclick="closeNav()" href="tentang.html">tentang</a></li>
+          <li><a onclick="closeNav()" href="layanan.html">layanan</a></li>
+          <li><a onclick="closeNav()" href="#booking">booking</a></li>
+          <div class="mt-10 h-6 w-6 cursor-pointer" onclick="closeNav()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+              ></path>
+            </svg>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- section hero -->
+      <section id="home" class="mt-10">
+        <div
+          class="section-container mt-14 grid h-full w-full grid-cols-1 gap-5 lg:grid-cols-2 xl:mt-0 xl:gap-14"
+        >
+          <div
+            class="hidden items-start justify-center lg:flex xl:justify-center"
+          >
+            <img
+              src="assets/image/hero/hero.webp"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+              class="w-[90%] xl:w-[70%]"
+            />
+          </div>
+          <div class="relative flex h-full w-full items-center justify-center">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+              class="flex flex-col gap-4"
+            >
+              <div class="flex flex-row items-center gap-3">
+                <img src="assets/icons/hero/apple.svg" alt="" />
+                <h2 class="small-title">Wisata Edukasi Kebun Apel</h2>
+              </div>
+              <h1
+                class="font-urbanist text-3xl font-bold capitalize text-text-primary-color md:text-3xl lg:text-4xl xl:text-[64px] xl:leading-tight"
+              >
+                Nikmati Wisata Petik Apel & Edukasi Seru di Alam Terbuka
+              </h1>
+              <p class="section-text xl:max-w-[60%]">
+                Belajar dan berwisata bersama keluarga di suasana kebun yang
+                sejuk dan alami.
+              </p>
+              <div
+                class="flex flex-col items-start gap-3 sm:flex-row md:items-center"
+              >
+                <button
+                  class="button-primary can-hover group flex flex-row items-center gap-2"
+                >
+                  Booking via Whatsapp
+                </button>
+                <button
+                  class="button-secondary can-hover group flex flex-row items-center gap-2"
+                >
+                  Kontak Kami
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section layanan -->
+      <section id="layanan" class="section-container">
+        <div
+          class="flex flex-col gap-3 lg:flex-row lg:justify-between"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 class="section-title">Layanan di Kebun kami</h1>
+          <p class="section-text w-full lg:max-w-[40%]">
+            Dari edukasi menanam hingga menyeruput kopi di tengah kebun — kami
+            punya semua pengalaman terbaik untukmu.
+          </p>
+        </div>
+
+        <div>
+          <div class="swiper many-swiper">
+            <div class="swiper-wrapper py-10">
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/apple.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Edukasi</p>
+                    <p class="text mt-1.5">
+                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/apple.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Edukasi</p>
+                    <p class="text mt-1.5">
+                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/apple.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Edukasi</p>
+                    <p class="text mt-1.5">
+                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/apple.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Edukasi</p>
+                    <p class="text mt-1.5">
+                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full items-center justify-center"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section about -->
+      <section id="about" class="section-container">
+        <div class="grid grid-cols-5 gap-5 lg:grid-cols-11 lg:gap-8 xl:gap-24">
+          <div
+            class="col-span-5 flex flex-col justify-center lg:col-span-6 lg:mt-0"
+          >
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+              class="flex flex-col"
+            >
+              <h1 class="section-title">Tentang Kebun Vandoyo</h1>
+              <div
+                class="mb-5 border-b border-border-color text-center text-sm font-medium text-inactive-color"
+              >
+                <ul class="-mb-px flex flex-wrap">
+                  <li class="me-2">
+                    <button
+                      onclick="showTab(1)"
+                      id="tab-button-1"
+                      class="tab tab-active"
+                    >
+                      Cerita Kami
+                    </button>
+                  </li>
+                  <li class="me-2">
+                    <button
+                      onclick="showTab(2)"
+                      id="tab-button-2"
+                      class="tab tab-inactive"
+                    >
+                      Visi Kami
+                    </button>
+                  </li>
+                  <li class="me-2">
+                    <button
+                      onclick="showTab(3)"
+                      id="tab-button-3"
+                      class="tab tab-inactive"
+                    >
+                      Misi Kami
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div id="tab-content-1">
+                <p class="text xl:max-w-[90%]">
+                  Terletak di lereng pegunungan yang sejuk, Kebun Vandoyo hadir
+                  sebagai destinasi wisata edukatif yang menggabungkan keindahan
+                  alam dengan pengalaman belajar yang menyenangkan. Di sini,
+                  pengunjung bisa merasakan langsung proses menanam, merawat,
+                  hingga memetik apel segar dari pohonnya.
+                </p>
+              </div>
+              <div id="tab-content-2" class="!hidden">
+                <p class="text xl:max-w-[90%]">
+                  Menjadi kebun apel edukatif dan berkelanjutan yang
+                  menginspirasi masyarakat untuk lebih dekat dengan alam,
+                  menghargai hasil bumi, dan menerapkan gaya hidup ramah
+                  lingkungan.
+                </p>
+              </div>
+              <div id="tab-content-3" class="!hidden">
+                <p class="text xl:max-w-[90%]">
+                  Kebun Vandoyo berkomitmen untuk menghadirkan pengalaman wisata
+                  dan edukasi yang menyenangkan, menanam apel dengan cara alami
+                  dan ramah lingkungan, serta memberdayakan masyarakat sekitar
+                  melalui berbagai kegiatan kebun. Kami juga terus mengembangkan
+                  produk lokal berbasis apel berkualitas sebagai bentuk cinta
+                  kami terhadap alam dan hasil bumi.
+                </p>
+              </div>
+              <div class="mt-11 flex flex-row items-center gap-12">
+                <div class="flex flex-col gap-1">
+                  <h1 class="section-title">10+</h1>
+                  <p class="text">Tahun Pengalaman</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h1 class="section-title">10+</h1>
+                  <p class="text">Tahun Pengalaman</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h1 class="section-title">10+</h1>
+                  <p class="text">Tahun Pengalaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-5 hidden items-center justify-start lg:col-span-5 lg:flex"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="assets/image/about/about.webp"
+              alt=""
+              class="w-[75%] lg:w-full xl:w-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section galery -->
+      <section id="gallery" class="section-container">
+        <div
+          class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 class="section-title lg:max-w-[40%]">
+            Potret Pemandangan di Kebun Kami
+          </h1>
+          <p class="section-text w-full lg:max-w-[40%]">
+            Dari edukasi menanam hingga menyeruput kopi di tengah kebun — kami
+            punya semua pengalaman terbaik untukmu.
+          </p>
+        </div>
+
+        <div class="mt-10 w-full">
+          <div class="grid grid-cols-[auto_auto_auto_auto] gap-2 xl:gap-4">
+            <div class="hidden flex-col gap-2 md:flex xl:gap-4">
+              <a
+                href="assets/image/gallery/gallery (1).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (1).webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="assets/image/gallery/gallery (2).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (2).webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="flex flex-col justify-between gap-2 xl:gap-4">
+              <a
+                href="assets/image/gallery/gallery (3).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (3).webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="assets/image/gallery/gallery (4).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (4).webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="assets/image/gallery/gallery (5).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (5).webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="flex flex-col justify-between gap-2 xl:gap-4">
+              <a
+                href="assets/image/gallery/gallery (6).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (6).webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="assets/image/gallery/gallery (7).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (7).webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="assets/image/gallery/gallery (8).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (8).webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="hidden flex-col gap-2 md:flex xl:gap-4">
+              <a
+                href="assets/image/gallery/gallery (9).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (9).webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="assets/image/gallery/gallery (10).webp"
+                data-lightbox="gallery"
+              >
+                <img
+                  class="h-full w-full"
+                  src="assets/image/gallery/gallery (10).webp"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section testimonial -->
+      <section id="testimonial" class="section-container">
+        <div
+          class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 class="section-title lg:max-w-[40%]">
+            Cerita dari Mereka yang Sudah Datang
+          </h1>
+          <p class="section-text w-full lg:max-w-[40%]">
+            Apa kata mereka tentang pengalaman di Kebun Apel Vandoyo? Yuk,
+            dengar langsung dari pengunjung yang puas!
+          </p>
+        </div>
+
+        <div>
+          <div class="swiper many-swiper">
+            <div class="swiper-wrapper py-10">
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div
+                    class="testimonial-card can-hover group flex flex-col gap-4"
+                  >
+                    <div
+                      class="h-7 w-6 bg-quote bg-contain bg-center bg-no-repeat"
+                    ></div>
+                    <p class="section-text line-clamp-3">
+                      Pengalaman petik apel di sini bener-bener seru dan
+                      berkesan untuk keluarga kami.
+                    </p>
+                    <div class="flex w-full flex-row items-center gap-3 pt-2">
+                      <img
+                        src="assets/icons/testimonial/image (1).png"
+                        alt=""
+                      />
+                      <div>
+                        <h6 class="medium-title !text-sm font-semibold">
+                          Pak Budi
+                        </h6>
+                        <p class="section-text -mt-0.5 !text-sm !font-medium">
+                          Keluarga dari Jakarta
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div
+                    class="testimonial-card can-hover group flex flex-col gap-4"
+                  >
+                    <div
+                      class="h-7 w-6 bg-quote bg-contain bg-center bg-no-repeat"
+                    ></div>
+                    <p class="section-text line-clamp-3">
+                      Pengalaman petik apel di sini bener-bener seru dan
+                      berkesan untuk keluarga kami.
+                    </p>
+                    <div class="flex w-full flex-row items-center gap-3 pt-2">
+                      <img
+                        src="assets/icons/testimonial/image (1).png"
+                        alt=""
+                      />
+                      <div>
+                        <h6 class="medium-title !text-sm font-semibold">
+                          Pak Budi
+                        </h6>
+                        <p class="section-text -mt-0.5 !text-sm !font-medium">
+                          Keluarga dari Jakarta
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div
+                    class="testimonial-card can-hover group flex flex-col gap-4"
+                  >
+                    <div
+                      class="h-7 w-6 bg-quote bg-contain bg-center bg-no-repeat"
+                    ></div>
+                    <p class="section-text line-clamp-3">
+                      Pengalaman petik apel di sini bener-bener seru dan
+                      berkesan untuk keluarga kami.
+                    </p>
+                    <div class="flex w-full flex-row items-center gap-3 pt-2">
+                      <img
+                        src="assets/icons/testimonial/image (1).png"
+                        alt=""
+                      />
+                      <div>
+                        <h6 class="medium-title !text-sm font-semibold">
+                          Pak Budi
+                        </h6>
+                        <p class="section-text -mt-0.5 !text-sm !font-medium">
+                          Keluarga dari Jakarta
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div
+                    class="testimonial-card can-hover group flex flex-col gap-4"
+                  >
+                    <div
+                      class="h-7 w-6 bg-quote bg-contain bg-center bg-no-repeat"
+                    ></div>
+                    <p class="section-text line-clamp-3">
+                      Pengalaman petik apel di sini bener-bener seru dan
+                      berkesan untuk keluarga kami.
+                    </p>
+                    <div class="flex w-full flex-row items-center gap-3 pt-2">
+                      <img
+                        src="assets/icons/testimonial/image (1).png"
+                        alt=""
+                      />
+                      <div>
+                        <h6 class="medium-title !text-sm font-semibold">
+                          Pak Budi
+                        </h6>
+                        <p class="section-text -mt-0.5 !text-sm !font-medium">
+                          Keluarga dari Jakarta
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div
+                    class="testimonial-card can-hover group flex flex-col gap-4"
+                  >
+                    <div
+                      class="h-7 w-6 bg-quote bg-contain bg-center bg-no-repeat"
+                    ></div>
+                    <p class="section-text line-clamp-3">
+                      Pengalaman petik apel di sini bener-bener seru dan
+                      berkesan untuk keluarga kami.
+                    </p>
+                    <div class="flex w-full flex-row items-center gap-3 pt-2">
+                      <img
+                        src="assets/icons/testimonial/image (1).png"
+                        alt=""
+                      />
+                      <div>
+                        <h6 class="medium-title !text-sm font-semibold">
+                          Pak Budi
+                        </h6>
+                        <p class="section-text -mt-0.5 !text-sm !font-medium">
+                          Keluarga dari Jakarta
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination" style="position: static"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section booking -->
+      <section id="booking" class="section-container">
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+          <div
+            class="row-start-2 flex flex-col justify-center gap-5 lg:row-start-1"
+          >
+            <div class="input-container">
+              <div class="input-group">
+                <input type="text" placeholder="Masukkan nama..." />
+                <img src="assets/icons/booking/person.svg" alt="" />
+              </div>
+              <div class="input-group">
+                <input type="number" placeholder="Jumlah orang......" />
+                <img src="assets/icons/booking/person.svg" alt="" />
+              </div>
+              <div class="input-group">
+                <input
+                  type="date"
+                  id="tanggal"
+                  placeholder="Tanggal kunjungan..."
+                />
+                <label for="tanggal">
+                  <img src="assets/icons/booking/date.svg" alt="" />
+                </label>
+              </div>
+            </div>
+            <button class="button-primary">Booking via Whatsapp</button>
+          </div>
+          <div class="flex flex-col justify-center">
+            <h1 class="section-title">
+              Rencanakan Kunjunganmu ke Kebun Vandoyo
+            </h1>
+            <p class="text">
+              Nikmati pengalaman memetik apel langsung dari pohonnya, belajar
+              serunya dunia pertanian, dan bersantai di tengah suasana kebun
+              yang asri.
+            </p>
+            <p class="text mt-5">
+              Isi formulir di samping untuk memesan jadwal kunjunganmu. Tim kami
+              akan mengonfirmasi melalui WhatsApp untuk memastikan pengalaman
+              terbaik saat kamu datang ke Kebun Vandoyo
+            </p>
+            <div class="mt-3 flex flex-row items-center gap-3">
+              <img src="assets/icons/booking/phone.svg" alt="" />
+              <p class="text">+62-851-5533-9188</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section cta -->
+      <section class="section-container" id="cta">
+        <div class="relative h-96 md:h-80 lg:h-auto">
+          <img
+            class="h-full w-full rounded-xl object-cover object-center"
+            src="assets/image/cta/cta.webp"
+            alt=""
+          />
+          <h2
+            class="cta-title absolute left-5 top-5 max-w-[90%] lg:left-12 lg:top-12 lg:max-w-[60%]"
+          >
+            Rencanakan kunjunganmu sekarang dan nikmati pengalaman memetik apel
+            bersama orang tersayang.
+          </h2>
+          <img
+            src="assets/image/logo-white.svg"
+            alt=""
+            class="absolute bottom-20 left-5 lg:bottom-12 lg:left-12"
+          />
+          <a
+            href=""
+            class="button-primary absolute bottom-5 left-5 !rounded-full !bg-primary-color !text-text-primary-color lg:bottom-12 lg:left-auto lg:right-12"
+            >Booking via Whatsapp</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top !w-[85%] text-text-primary-color">
+        <div
+          class="col-span-1 flex flex-col items-center justify-center lg:items-start lg:justify-start xl:col-span-3"
+        >
+          <div class="flex justify-center xl:justify-start">
+            <img src="assets/image/logo-footer.svg" alt="" class="" />
+          </div>
+          <p
+            class="text mt-3 max-w-[80%] text-center text-text-primary-color opacity-65 xl:text-left"
+          >
+            Belajar dan berwisata bersama keluarga di suasana kebun yang sejuk
+            dan alami.
+          </p>
+        </div>
+
+        <div
+          class="col-span-1 grid grid-cols-2 gap-7 md:grid-cols-3 xl:col-span-6 xl:col-start-5 xl:grid-cols-4 xl:gap-0"
+        >
+          <div class="footer-link-container xl:col-start-2">
+            <h3 class="medium-title font-bold">Link Cepat</h3>
+            <ul>
+              <li><a href="#hero">Beranda</a></li>
+              <li><a href="tentang.html">Tentang</a></li>
+              <li><a href="layanan.html">Layanan</a></li>
+              <li><a href="">Booking</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-container">
+            <h3 class="medium-title font-bold">Kontak Kami</h3>
+            <ul>
+              <li><a href="">+62-851-5533-9188</a></li>
+              <li><a href="">vandoyo@gmail.com</a></li>
+              <li><a href="">Butuh bantuan ?</a></li>
+              <li><a href="">Kontak Kami</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-container">
+            <h3 class="medium-title font-bold">Social Media</h3>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/kebun.vandoyo/">Instagram</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@kebunvandoyo">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div
+          class="flex w-full flex-col items-center justify-between gap-3 lg:flex-row"
+        >
+          <p class="section-text">Made by EriyaDev</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tab.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
