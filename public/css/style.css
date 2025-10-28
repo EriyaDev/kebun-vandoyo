@@ -988,6 +988,11 @@ video {
   background-color: rgb(254 254 254 / var(--tw-bg-opacity, 1));
 }
 
+.bg-accent-color{
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 163 30 / var(--tw-bg-opacity, 1));
+}
+
 .bg-quote{
   background-image: url('/public/assets/icons/global/quote.svg');
 }
@@ -1045,6 +1050,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.\!text-center{
+  text-align: center !important;
 }
 
 .font-urbanist{
