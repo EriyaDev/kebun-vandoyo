@@ -27,8 +27,18 @@
     <header class="top-0 z-50">
       <nav class="section-container navbar">
         <div class="logo">
-          <img src="assets/image/logo.svg" alt="" class="hidden lg:flex" />
-          <img src="assets/image/logo-mobile.svg" alt="" class="lg:hidden" />
+          <img
+            loading="lazy"
+            src="assets/image/logo.svg"
+            alt=""
+            class="hidden lg:flex"
+          />
+          <img
+            loading="lazy"
+            src="assets/image/logo-mobile.svg"
+            alt=""
+            class="lg:hidden"
+          />
         </div>
 
         <div class="flex flex-row items-center gap-5">
@@ -36,7 +46,7 @@
             <li><a href="#beranda">beranda</a></li>
             <li><a href="tentang.html">tentang</a></li>
             <li><a href="layanan.html">layanan</a></li>
-            <li><a href="#booking">booking</a></li>
+            <li><a href="index.html#booking">booking</a></li>
           </ul>
 
           <div class="flex flex-row items-center gap-1">
@@ -51,7 +61,11 @@
                 ></path>
               </svg>
             </div>
-            <button class="button-primary hidden lg:block">Hubungi Kami</button>
+            <a
+              href="https://wa.link/h8z0sa"
+              class="button-primary hidden !text-primary-color lg:block"
+              >Hubungi Kami</a
+            >
           </div>
         </div>
       </nav>
@@ -61,7 +75,7 @@
           <li><a onclick="closeNav()" href="#beranda">beranda</a></li>
           <li><a onclick="closeNav()" href="tentang.html">tentang</a></li>
           <li><a onclick="closeNav()" href="layanan.html">layanan</a></li>
-          <li><a onclick="closeNav()" href="#booking">booking</a></li>
+          <li><a onclick="closeNav()" href="index.html#booking">booking</a></li>
           <div class="mt-10 h-6 w-6 cursor-pointer" onclick="closeNav()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -87,6 +101,7 @@
             class="hidden items-start justify-center lg:flex xl:justify-center"
           >
             <img
+              loading="lazy"
               src="assets/image/hero/hero.webp"
               alt=""
               data-aos="fade-up"
@@ -103,7 +118,7 @@
               class="flex flex-col gap-4"
             >
               <div class="flex flex-row items-center gap-3">
-                <img src="assets/icons/hero/apple.svg" alt="" />
+                <img loading="lazy" src="assets/icons/hero/apple.svg" alt="" />
                 <h2 class="small-title">Wisata Edukasi Kebun Apel</h2>
               </div>
               <h1
@@ -230,6 +245,7 @@
             data-aos-duration="1000"
           >
             <img
+              loading="lazy"
               src="assets/image/about/about.webp"
               alt=""
               class="w-[75%] lg:w-full xl:w-full"
@@ -264,6 +280,7 @@
                 >
                   <div class="card can-hover group flex flex-col">
                     <img
+                      loading="lazy"
                       src="assets/icons/service/apple.svg"
                       alt=""
                       class="h-fit w-fit"
@@ -277,6 +294,7 @@
                       class="learn-more text group mt-5 flex flex-row items-center gap-2"
                       >Pelajari lebih lanjut
                       <img
+                        loading="lazy"
                         src="assets/icons/global/arrow-right.svg"
                         alt=""
                         class="can-hover group-hover:ml-1"
@@ -288,11 +306,12 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="00"
+                  data-aos-delay="200"
                   class="h-full w-full"
                 >
                   <div class="card can-hover group flex flex-col">
                     <img
+                      loading="lazy"
                       src="assets/icons/service/tree.svg"
                       alt=""
                       class="h-fit w-fit"
@@ -306,6 +325,7 @@
                       class="learn-more text group mt-5 flex flex-row items-center gap-2"
                       >Pelajari lebih lanjut
                       <img
+                        loading="lazy"
                         src="assets/icons/global/arrow-right.svg"
                         alt=""
                         class="can-hover group-hover:ml-1"
@@ -317,11 +337,12 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="00"
+                  data-aos-delay="400"
                   class="h-full w-full"
                 >
                   <div class="card can-hover group flex flex-col">
                     <img
+                      loading="lazy"
                       src="assets/icons/service/cafe.svg"
                       alt=""
                       class="h-fit w-fit"
@@ -335,6 +356,7 @@
                       class="learn-more text group mt-5 flex flex-row items-center gap-2"
                       >Pelajari lebih lanjut
                       <img
+                        loading="lazy"
                         src="assets/icons/global/arrow-right.svg"
                         alt=""
                         class="can-hover group-hover:ml-1"
@@ -346,11 +368,12 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="00"
+                  data-aos-delay="600"
                   class="h-full w-full"
                 >
                   <div class="card can-hover group flex flex-col">
                     <img
+                      loading="lazy"
                       src="assets/icons/service/shopping-bag.svg"
                       alt=""
                       class="h-fit w-fit"
@@ -364,6 +387,7 @@
                       class="learn-more text group mt-5 flex flex-row items-center gap-2"
                       >Pelajari lebih lanjut
                       <img
+                        loading="lazy"
                         src="assets/icons/global/arrow-right.svg"
                         alt=""
                         class="can-hover group-hover:ml-1"
@@ -399,9 +423,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (1).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (1).webp"
                   alt=""
@@ -410,9 +435,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (2).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (2).webp"
                   alt=""
@@ -423,9 +449,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (3).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (3).webp"
                   alt=""
@@ -434,9 +461,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (4).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (4).webp"
                   alt=""
@@ -445,9 +473,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (5).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (5).webp"
                   alt=""
@@ -458,9 +487,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (6).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (6).webp"
                   alt=""
@@ -469,9 +499,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (7).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (7).webp"
                   alt=""
@@ -480,9 +511,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (8).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (8).webp"
                   alt=""
@@ -493,9 +525,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (9).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (9).webp"
                   alt=""
@@ -504,9 +537,10 @@
               <a
                 data-fancybox="gallery"
                 href="assets/image/gallery/gallery (10).webp"
-                data-lightbox="gallery"
+                data-aos="fade"
               >
                 <img
+                  loading="lazy"
                   class="h-full w-full"
                   src="assets/image/gallery/gallery (10).webp"
                   alt=""
@@ -574,7 +608,7 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="00"
+                  data-aos-delay="200"
                   class="h-full w-full"
                 >
                   <div
@@ -608,7 +642,7 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="00"
+                  data-aos-delay="400"
                   class="h-full w-full"
                 >
                   <div
@@ -642,7 +676,7 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="00"
+                  data-aos-delay="600"
                   class="h-full w-full"
                 >
                   <div
@@ -676,7 +710,7 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="00"
+                  data-aos-delay="800"
                   class="h-full w-full"
                 >
                   <div
@@ -717,6 +751,8 @@
       <section id="booking" class="section-container">
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
             class="row-start-2 flex flex-col justify-center gap-5 lg:row-start-1"
           >
             <div class="input-container">
@@ -739,9 +775,16 @@
                 </label>
               </div>
             </div>
-            <button class="button-primary">Booking via Whatsapp</button>
+            <a href="https://wa.link/h8z0sa" class="button-primary"
+              >Booking via Whatsapp</a
+            >
           </div>
-          <div class="flex flex-col justify-center">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            class="flex flex-col justify-center"
+          >
             <h1 class="section-title">
               Rencanakan Kunjunganmu ke Kebun Vandoyo
             </h1>

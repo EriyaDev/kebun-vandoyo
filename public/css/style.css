@@ -1111,6 +1111,16 @@ video {
   color: rgb(18 18 18 / var(--tw-text-opacity, 1));
 }
 
+.text-primary-color{
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity, 1));
+}
+
+.\!text-primary-color{
+  --tw-text-opacity: 1 !important;
+  color: rgb(254 254 254 / var(--tw-text-opacity, 1)) !important;
+}
+
 .opacity-65{
   opacity: 0.65;
 }

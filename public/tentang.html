@@ -33,7 +33,7 @@
             <li><a href="index.html">beranda</a></li>
             <li><a href="tentang.html">tentang</a></li>
             <li><a href="layanan.html">layanan</a></li>
-            <li><a href="#booking">booking</a></li>
+            <li><a href="index.html#booking">booking</a></li>
           </ul>
 
           <div class="flex flex-row items-center gap-1">
@@ -48,7 +48,11 @@
                 ></path>
               </svg>
             </div>
-            <button class="button-primary hidden lg:block">Hubungi Kami</button>
+            <a
+              href="https://wa.link/h8z0sa"
+              class="button-primary hidden !text-primary-color lg:block"
+              >Hubungi Kami</a
+            >
           </div>
         </div>
       </nav>
@@ -58,7 +62,7 @@
           <li><a onclick="closeNav()" href="index.html">beranda</a></li>
           <li><a onclick="closeNav()" href="tentang.html">tentang</a></li>
           <li><a onclick="closeNav()" href="layanan.html">layanan</a></li>
-          <li><a onclick="closeNav()" href="#booking">booking</a></li>
+          <li><a onclick="closeNav()" href="index.html#booking">booking</a></li>
           <div class="mt-10 h-6 w-6 cursor-pointer" onclick="closeNav()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +83,7 @@
       <section id="about" class="section-container">
         <div class="grid grid-cols-5 gap-5 lg:grid-cols-11 lg:gap-8 xl:gap-24">
           <div
-            class="col-span-5 mt-10 flex flex-col justify-center lg:col-span-6 lg:mt-0"
+            class="col-span-5 flex flex-col justify-center lg:col-span-6 lg:mt-0"
           >
             <div
               data-aos="fade-up"
@@ -89,7 +93,7 @@
             >
               <h1 class="section-title">Tentang Kebun Vandoyo</h1>
               <div
-                class="mb-5 border-b border-border-color text-center text-sm font-medium text-inactive-color"
+                class="mb-5 mt-8 border-b border-border-color text-center text-sm font-medium text-inactive-color"
               >
                 <ul class="-mb-px flex flex-wrap">
                   <li class="me-2">
@@ -154,12 +158,12 @@
                   <p class="text">Tahun Pengalaman</p>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h1 class="section-title">10+</h1>
-                  <p class="text">Tahun Pengalaman</p>
+                  <h1 class="section-title">1.200+</h1>
+                  <p class="text">Pengunjung</p>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h1 class="section-title">10+</h1>
-                  <p class="text">Tahun Pengalaman</p>
+                  <h1 class="section-title">15+</h1>
+                  <p class="text">Jenis Pohon Apel</p>
                 </div>
               </div>
             </div>
@@ -171,6 +175,7 @@
             data-aos-duration="1000"
           >
             <img
+              loading="lazy"
               src="assets/image/about/about.webp"
               alt=""
               class="w-[75%] lg:w-full xl:w-full"

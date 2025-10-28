@@ -33,7 +33,7 @@
             <li><a href="index.html">beranda</a></li>
             <li><a href="tentang.html">tentang</a></li>
             <li><a href="layanan.html">layanan</a></li>
-            <li><a href="#booking">booking</a></li>
+            <li><a href="index.html#booking">booking</a></li>
           </ul>
 
           <div class="flex flex-row items-center gap-1">
@@ -48,7 +48,11 @@
                 ></path>
               </svg>
             </div>
-            <button class="button-primary hidden lg:block">Hubungi Kami</button>
+            <a
+              href="https://wa.link/h8z0sa"
+              class="button-primary hidden !text-primary-color lg:block"
+              >Hubungi Kami</a
+            >
           </div>
         </div>
       </nav>
@@ -58,7 +62,7 @@
           <li><a onclick="closeNav()" href="index.html">beranda</a></li>
           <li><a onclick="closeNav()" href="tentang.html">tentang</a></li>
           <li><a onclick="closeNav()" href="layanan.html">layanan</a></li>
-          <li><a onclick="closeNav()" href="#booking">booking</a></li>
+          <li><a onclick="closeNav()" href="index.html#booking">booking</a></li>
           <div class="mt-10 h-6 w-6 cursor-pointer" onclick="closeNav()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -379,7 +383,7 @@
                       Menanam Bibit Apel
                     </p>
                     <p class="text mt-1.5">
-                      Langsung praktek menanam dan merawat pohon ke
+                      Langsung praktek menanam dan merawat pohon apel
                     </p>
                   </div>
                 </div>
@@ -431,6 +435,33 @@
             </div>
             <div class="flex w-full items-center justify-center"></div>
           </div>
+        </div>
+      </section>
+
+      <!-- section cta -->
+      <section class="section-container" id="cta">
+        <div class="relative h-96 md:h-80 lg:h-auto">
+          <img
+            class="h-full w-full rounded-xl object-cover object-center"
+            src="assets/image/cta/cta.webp"
+            alt=""
+          />
+          <h2
+            class="cta-title absolute left-5 top-5 max-w-[90%] lg:left-12 lg:top-12 lg:max-w-[60%]"
+          >
+            Rencanakan kunjunganmu sekarang dan nikmati pengalaman memetik apel
+            bersama orang tersayang.
+          </h2>
+          <img
+            src="assets/image/logo-white.svg"
+            alt=""
+            class="absolute bottom-20 left-5 lg:bottom-12 lg:left-12"
+          />
+          <a
+            href=""
+            class="button-primary absolute bottom-5 left-5 !rounded-full !bg-primary-color !text-text-primary-color lg:bottom-12 lg:left-auto lg:right-12"
+            >Booking via Whatsapp</a
+          >
         </div>
       </section>
     </main>
