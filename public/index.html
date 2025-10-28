@@ -15,8 +15,11 @@
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="../src/lightbox.css" />
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"
+    />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -131,145 +134,6 @@
         </div>
       </section>
 
-      <!-- section layanan -->
-      <section id="layanan" class="section-container">
-        <div
-          class="flex flex-col gap-3 lg:flex-row lg:justify-between"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h1 class="section-title">Layanan di Kebun kami</h1>
-          <p class="section-text w-full lg:max-w-[40%]">
-            Dari edukasi menanam hingga menyeruput kopi di tengah kebun — kami
-            punya semua pengalaman terbaik untukmu.
-          </p>
-        </div>
-
-        <div>
-          <div class="swiper many-swiper">
-            <div class="swiper-wrapper py-10">
-              <div class="swiper-slide">
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="00"
-                  class="h-full w-full"
-                >
-                  <div class="card can-hover group flex flex-col">
-                    <img
-                      src="assets/icons/service/apple.svg"
-                      alt=""
-                      class="h-fit w-fit"
-                    />
-                    <p class="card-title mt-3.5">Edukasi</p>
-                    <p class="text mt-1.5">
-                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
-                    </p>
-                    <a
-                      href=""
-                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
-                      >Pelajari lebih lanjut
-                      <img
-                        src="assets/icons/global/arrow-right.svg"
-                        alt=""
-                        class="can-hover group-hover:ml-1"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="00"
-                  class="h-full w-full"
-                >
-                  <div class="card can-hover group flex flex-col">
-                    <img
-                      src="assets/icons/service/apple.svg"
-                      alt=""
-                      class="h-fit w-fit"
-                    />
-                    <p class="card-title mt-3.5">Edukasi</p>
-                    <p class="text mt-1.5">
-                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
-                    </p>
-                    <a
-                      href=""
-                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
-                      >Pelajari lebih lanjut
-                      <img
-                        src="assets/icons/global/arrow-right.svg"
-                        alt=""
-                        class="can-hover group-hover:ml-1"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="00"
-                  class="h-full w-full"
-                >
-                  <div class="card can-hover group flex flex-col">
-                    <img
-                      src="assets/icons/service/apple.svg"
-                      alt=""
-                      class="h-fit w-fit"
-                    />
-                    <p class="card-title mt-3.5">Edukasi</p>
-                    <p class="text mt-1.5">
-                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
-                    </p>
-                    <a
-                      href=""
-                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
-                      >Pelajari lebih lanjut
-                      <img
-                        src="assets/icons/global/arrow-right.svg"
-                        alt=""
-                        class="can-hover group-hover:ml-1"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="00"
-                  class="h-full w-full"
-                >
-                  <div class="card can-hover group flex flex-col">
-                    <img
-                      src="assets/icons/service/apple.svg"
-                      alt=""
-                      class="h-fit w-fit"
-                    />
-                    <p class="card-title mt-3.5">Edukasi</p>
-                    <p class="text mt-1.5">
-                      Mengabadikan momen sakral dengan gaya dokumentasi elegan.
-                    </p>
-                    <a
-                      href=""
-                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
-                      >Pelajari lebih lanjut
-                      <img
-                        src="assets/icons/global/arrow-right.svg"
-                        alt=""
-                        class="can-hover group-hover:ml-1"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex w-full items-center justify-center"></div>
-          </div>
-        </div>
-      </section>
-
       <!-- section about -->
       <section id="about" class="section-container">
         <div class="grid grid-cols-5 gap-5 lg:grid-cols-11 lg:gap-8 xl:gap-24">
@@ -284,7 +148,7 @@
             >
               <h1 class="section-title">Tentang Kebun Vandoyo</h1>
               <div
-                class="mb-5 border-b border-border-color text-center text-sm font-medium text-inactive-color"
+                class="mb-5 mt-8 border-b border-border-color text-center text-sm font-medium text-inactive-color"
               >
                 <ul class="-mb-px flex flex-wrap">
                   <li class="me-2">
@@ -349,12 +213,12 @@
                   <p class="text">Tahun Pengalaman</p>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h1 class="section-title">10+</h1>
-                  <p class="text">Tahun Pengalaman</p>
+                  <h1 class="section-title">1.200+</h1>
+                  <p class="text">Pengunjung</p>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h1 class="section-title">10+</h1>
-                  <p class="text">Tahun Pengalaman</p>
+                  <h1 class="section-title">15+</h1>
+                  <p class="text">Jenis Pohon Apel</p>
                 </div>
               </div>
             </div>
@@ -374,6 +238,145 @@
         </div>
       </section>
 
+      <!-- section layanan -->
+      <section id="layanan" class="section-container">
+        <div
+          class="flex flex-col gap-3 lg:flex-row lg:justify-between"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 class="section-title">Layanan di Kebun kami</h1>
+          <p class="section-text w-full lg:max-w-[40%]">
+            Dari edukasi menanam hingga menyeruput kopi di tengah kebun — kami
+            punya semua pengalaman terbaik untukmu.
+          </p>
+        </div>
+
+        <div>
+          <div class="swiper many-swiper">
+            <div class="swiper-wrapper py-10">
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/apple.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Edukasi</p>
+                    <p class="text mt-1.5">
+                      Belajar seru mengenal proses dan perawatan tanaman apel.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/tree.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Petik Apel</p>
+                    <p class="text mt-1.5">
+                      Rasakan sensasi memetik apel segar langsung dari kebun.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/cafe.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Cafe</p>
+                    <p class="text mt-1.5">
+                      Nikmati minuman apel segar sambil menikmati pemandangan.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="00"
+                  class="h-full w-full"
+                >
+                  <div class="card can-hover group flex flex-col">
+                    <img
+                      src="assets/icons/service/shopping-bag.svg"
+                      alt=""
+                      class="h-fit w-fit"
+                    />
+                    <p class="card-title mt-3.5">Merchandise</p>
+                    <p class="text mt-1.5">
+                      Bawa pulang oleh-oleh khas Kebun Vandoyo yang eksklusif.
+                    </p>
+                    <a
+                      href=""
+                      class="learn-more text group mt-5 flex flex-row items-center gap-2"
+                      >Pelajari lebih lanjut
+                      <img
+                        src="assets/icons/global/arrow-right.svg"
+                        alt=""
+                        class="can-hover group-hover:ml-1"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full items-center justify-center"></div>
+          </div>
+        </div>
+      </section>
+
       <!-- section galery -->
       <section id="gallery" class="section-container">
         <div
@@ -385,8 +388,8 @@
             Potret Pemandangan di Kebun Kami
           </h1>
           <p class="section-text w-full lg:max-w-[40%]">
-            Dari edukasi menanam hingga menyeruput kopi di tengah kebun — kami
-            punya semua pengalaman terbaik untukmu.
+            Jelajahi suasana damai dan kesejukan Kebun Vandoyo melalui
+            potret-potret terbaik kami.
           </p>
         </div>
 
@@ -394,6 +397,7 @@
           <div class="grid grid-cols-[auto_auto_auto_auto] gap-2 xl:gap-4">
             <div class="hidden flex-col gap-2 md:flex xl:gap-4">
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (1).webp"
                 data-lightbox="gallery"
               >
@@ -404,6 +408,7 @@
                 />
               </a>
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (2).webp"
                 data-lightbox="gallery"
               >
@@ -416,6 +421,7 @@
             </div>
             <div class="flex flex-col justify-between gap-2 xl:gap-4">
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (3).webp"
                 data-lightbox="gallery"
               >
@@ -426,6 +432,7 @@
                 />
               </a>
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (4).webp"
                 data-lightbox="gallery"
               >
@@ -436,6 +443,7 @@
                 />
               </a>
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (5).webp"
                 data-lightbox="gallery"
               >
@@ -448,6 +456,7 @@
             </div>
             <div class="flex flex-col justify-between gap-2 xl:gap-4">
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (6).webp"
                 data-lightbox="gallery"
               >
@@ -458,6 +467,7 @@
                 />
               </a>
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (7).webp"
                 data-lightbox="gallery"
               >
@@ -468,6 +478,7 @@
                 />
               </a>
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (8).webp"
                 data-lightbox="gallery"
               >
@@ -480,6 +491,7 @@
             </div>
             <div class="hidden flex-col gap-2 md:flex xl:gap-4">
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (9).webp"
                 data-lightbox="gallery"
               >
@@ -490,6 +502,7 @@
                 />
               </a>
               <a
+                data-fancybox="gallery"
                 href="assets/image/gallery/gallery (10).webp"
                 data-lightbox="gallery"
               >
@@ -844,14 +857,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
 
-    <script src="js/lightbox-plus-jquery.js"></script>
-    <script src="js/lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script>
       AOS.init({
         once: true,
+      });
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
       });
     </script>
   </body>
