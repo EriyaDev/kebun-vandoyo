@@ -2072,6 +2072,10 @@ footer{
     font-size: 64px;
   }
 
+  .xl\:text-\[60px\]{
+    font-size: 60px;
+  }
+
   .xl\:leading-tight{
     line-height: 1.25;
   }
