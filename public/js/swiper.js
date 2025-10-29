@@ -37,9 +37,6 @@ var pricingSwiper = new Swiper(".pricing-swiper", {
   slidesPerView: 1.1,
   spaceBetween: 30,
   grabCursor: true,
-  pagination: {
-    clickable: true,
-  },
   breakpoints: {
     640: {
       slidesPerView: 1.5,
@@ -63,8 +60,9 @@ var pricingSwiper = new Swiper(".pricing-swiper", {
     prevEl: ".swiper-button-prev-custom",
   },
   pagination: {
-    el: ".swiper-pagination",
-  },
+      el: '.swiper-pagination',
+      clickable: true,
+    },
 });
 
 var manySwiper = new Swiper(".many-swiper", {

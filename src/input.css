@@ -86,6 +86,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Navbar */
 header {
   @apply fixed left-1/2 z-50 w-full -translate-x-1/2 bg-primary-color;
@@ -218,7 +222,7 @@ header {
 }
 
 .karyawan-position {
-  @apply font-medium text-text-primary-color;
+  @apply text-center font-medium text-text-primary-color;
 }
 
 /* Pricing */
